@@ -37,3 +37,18 @@ var text = document.getElementById('text');
 var scene = document.getElementById('scene');
 var parallaxInstance = new Parallax(text);
 var parallaxInstance = new Parallax(scene);
+
+//smtp server for message
+function sendingEmail(){
+            Email.send({
+                SecureToken:"e5697484-5f59-4f8f-b11a-1fa65b317be5",
+                To : 'adigpt02@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "Name: "+document.getElementById("name-mail").value
+                        + "<br> Email: " +document.getElementById("email").value
+                        + "<br> Message: " +document.getElementById("message-mail").value
+            }).then(
+                message => alert("Message Send Successfully")
+            );
+        }
