@@ -377,22 +377,24 @@
             <div class="contactForm">
                 <h2>Send Your Message..</h2>
                 <div class="formBox">
-                    <div class="inputBox w50">
-                        <input type="text" name="" required>
-                        <span>Name</span>
-                    </div>
+                    <form onsubmit="sendingEmail(); reset(); return false;">
+                        <div class="inputBox w50">
+                            <input  type="text" name="" required>
+                            <span id ="name-mail">Name</span>
+                        </div>
 
-                    <div class="inputBox w50">
-                        <input type="text" name="" required>
-                        <span>Mail</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <textarea name="" required></textarea>
-                        <span>Message...</span>
-                    </div>
-                    <div class="inputBox w100">
-                        <input type="submit" value="Send">
-                    </div>
+                        <div class="inputBox w50">
+                            <input type="text" name="" required>
+                            <span id="email">Mail</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <textarea name="" required></textarea>
+                            <span id="message-mail">Message...</span>
+                        </div>
+                        <div class="inputBox w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -418,5 +420,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <!--JS Script-->
     <script type="text/javascript" src="Script/script.js"></script>
+    <!--smtpJS Script-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
