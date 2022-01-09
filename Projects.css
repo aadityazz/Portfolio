@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Luxurious+Roman&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Luxurious+Roman&family=Roboto+Mono:ital,wght@1,700&family=The+Nautigal:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, rgb(0, 1, 35) 0%, rgb(0, 1, 35) 100%);
+}
+
+.Intro-project{
+    padding-left: 15%;
+    padding-right: 8%;
+    background-image: url('/Images/projects.png');
+    height: 140vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.Intro-project h1{
+    opacity: 1;
+    font-size: 75px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: The Nautigal;
+    color: white;
+    padding-top: 8rem;
+}
+.Intro-project h3{
+    opacity: 1;
+    font-size: 35px;
+    font-family: Luxurious Roman;
+    color: white;
+    padding-top: 4rem;
+}
+.github-button{
+    opacity: 1;
+    width: 140px;
+    height: 40px;
+}
+.Intro-project h6{
+    font-family: Roboto Mono;
+    font-size: 20px;
+    padding: 15px 30px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background-color: #ff0f7b;
+    opacity: 0.9;
+    color: white;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.Intro-project h6:hover{
+    animation: animate linear 100ms 1 normal forwards;
+    opacity: 1;
+}
+
+@keyframes animate {
+    0%{
+        border-radius: 0;
+    }
+    100%{
+        border-radius: 15px 50px;
+    }
+}
+
+.creadits-project{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 50px;
+    font-family: The Nautigal;
+    color: white;
+}
+.name-project{
+    text-align: center;
+    font-size: 50px;
+    font-family: The Nautigal;
+    color: #ff0f7b;
+}
+.name-project:hover{
+    animation: incre-aser linear 100ms 1 normal forwards;
+}
+
+@keyframes incre-aser {
+    0%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+}
+
+.project-showcase{
+    display: flex;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+.project-heading{
+    color: #ff0f7b;
+    font-family: Luxurious Roman;
+    font-size: 40px;
+    margin-left: 50px;
+}
+.project-image{
+    margin-left: 10%;
+    height: 20px;
+    padding-bottom: 5rem;
+}
+.project-image img{
+    width: 600px;
+}
+.project-case-study{
+    margin-right: 100px;
+    padding-top: 30px;
+    margin-left: 50px;
+    color: white;
+    font-family: Georgia;
+}
+.project-visitor{
+    font-family: Roboto Mono;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-left: 50px;
+    margin-top: 2rem;
+    background-color: #ff0f7b;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.project-visitor:hover{
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .project-showcase{
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+        display: table-row-group;
+    }
+    .project-image{
+        margin-left: 10%;
+        height: 20px;
+        padding-bottom: 5rem;
+        padding-top: 4rem;
+    }
+    .project-heading{
+        margin-top: 20px;
+        color: #ff0f7b;
+        font-family: Luxurious Roman;
+        font-size: 40px;
+        margin-left: 10%;
+    }
+    .project-case-study{
+        margin-right: 100px;
+        padding-top: 30px;
+        margin-left: 10%;
+        color: white;
+        font-family: Georgia;
+    }
+    .project-visitor{
+        font-family: Roboto Mono;
+        font-size: 20px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 10px;
+        margin-left: 10%;
+        margin-top: 2rem;
+        background-color: #ff0f7b;
+        width: 80px;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        text-decoration: none !important;
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    .project-visitor:hover{
+        opacity: 1;
+    }
+    .project-image img{
+        width: 800px;
+    }
+    @media (max-width: 950px) {
+        .project-image img{
+            width: 700px;
+        }
+    }
+    @media (max-width: 850px) {
+        .project-image img{
+            width: 600px;
+        }
+    }
+    @media (max-width: 850px) {
+        .project-image img{
+            width: 500px;
+        }
+    }
+    @media (max-width: 750px) {
+        .project-image img{
+            width: 500px;
+        }
+    }
+    @media (max-width: 650px) {
+        .project-image img{
+            width: 420px;
+        }
+    }
+}
+
+.project-footer{
+    margin-top: 5rem;
+    background-color: #ff0f7b;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: 0.9;
+    font-family: "Franklin Gothic Medium";
+    letter-spacing: 5px;
+}
+
+.project-footer:hover{
+    margin-top: 5rem;
+    background-color: #ff0f7b;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    opacity: 1;
+    font-family: "Franklin Gothic Medium";
+    letter-spacing: 5px;
+}
