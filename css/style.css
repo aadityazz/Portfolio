@@ -87,7 +87,6 @@ textarea {
   display: block;
   font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
   letter-spacing: 3px;
   text-align: center;
   margin-bottom: 3.5rem;
@@ -247,7 +246,8 @@ textarea {
     text-align: center; }
 
 .about {
-  background: #fafafa; }
+
+  background: #fff; }
   .about__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -715,6 +715,124 @@ iframe {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+/* Experience Section */
+#experience {
+  background-color: #f7f7f7;
+  padding: 12rem 0 6rem;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-sec__main {
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.heading-sec__sub {
+  font-size: 1.8rem;
+  color: #777;
+  max-width: 80rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.experience__content {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+
+
+.experience__item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+  width: 800px;
+}
+
+.experience__item-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.experience__item-company {
+  font-size: 1.8rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.experience__item-header {
+  display: flex;
+  align-items: center;
+}
+
+.experience__item-logo {
+  width: 80px; /* Adjust the width and height to fit your logo size */
+  height: 80px;
+  margin-right: 15px; /* Adjust the spacing between the logo and text */
+}
+
+
+.experience__item-details {
+  font-size: 1.6rem;
+  color: #666;
+  margin-top: 1.5rem;
+}
+
+.experience__item-desc{
+  font-size: 1.6rem;
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+.experience__item-desc-li{
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  color: #444;
+}
+
+/* Gradient button style */
+.gradient-btn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  background-image: linear-gradient(135deg, #fae822, #f07147);
+  color: #fff;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.gradient-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .heading-sec__main {
+    font-size: 3rem;
+  }
+
+  .experience__item {
+    width: 100%;
+  }
+}
+
 
 @keyframes wheel {
   to {
